@@ -18,6 +18,21 @@
   align-items: center;
   text-align: left;
 }
+.image-item-2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 300px; /* Adjust the width to your desired size */
+  height: 300px; /* Adjust the height to your desired size */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+}
+.image-description-2 {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 5px;
+}
 .info-column {
   display: flex;
   margin-top: 20px;
