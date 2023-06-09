@@ -1,14 +1,14 @@
-# premier-portfolio
+# SketchGen Website
 
-That's "First portfolio" in French ✨
+Welcome to our project✨
 
 ## Screenshot 📸
 
-![Israel Mitolu portfolio screenshot](./assets/img/seo-img.png)
+![Website screenshot](./assets/img/proj_img/preview.png)
 
 ## Live Site 🚀
 
-[Preview the website here](https://israelmitolu.netlify.app).
+[Preview the website here](https://zhangruichun.github.io/SketchGen/).
 
 ## Tools 🔨
 
