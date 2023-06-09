@@ -211,33 +211,25 @@
             <div class="sub">
               <div class="project-text">  
               Illustration images play a significant role in enhancing imagination, improving comprehension, 
-              <br />
               and fostering engagement in storybooks. 
               <br />
               <br />
               However, manually creating high-quality, contextually appropriate, and appealing storybook
-              <br />
               illustrations can be challenging and time-consuming.
               <br />
               <br /> 
               Inspired by the current advancement of powerful text-to-image generative models, 
-              <br />
               we propose to leverage the capabilities of stable diffusion models to address this 
-              <br />
               challenge.
               <br />
               <br />
               Stable diffusion models have demonstrated remarkable success in synthesizing high-quality
-              <br />
               images. 
               <br />
               <br />
               By fine-tuning the stable diffusion model on a dataset of storybook illustration images
-              <br />
               in a unique sketchy style, we aim to automate the process of generating engaging
-              <br />
               illustrations tailored to storybooks and examine the factors affecting the model's quality
-              <br />
               when learning a rare style.
             </div>
             </div>
@@ -281,9 +273,7 @@
             <div class="sub">
               <div class="project-text">
                 The Hugging Face Sketch dataset consists of approximately 10,000 freehand scene 
-                <br />
                 sketches created by 100 non-expert individuals, 
-                <br />
                 providing object- and scene-level abstractions.
                 <br />
                 <br />
@@ -343,7 +333,6 @@
             <div class="sub">
               <div class="project-text">
                 We utilize <i>CLIP (Contrastive Language-Image Pretraining)</i> and 
-                <br />
                 <i>FID (Fréchet Inception Distance)</i> scores to evaluate the performance of our model. 
                 <br />
                 <br />
@@ -354,21 +343,16 @@
                 <br />
                 <br />
                 For instance, when using the prompt: <i>Help the little bunny find its missing carrot</i> to generate an image, we
-                <br />
                 calculate its corresponding CLIP score using the prompt: <i>A children's comic book sketch of "Help the little
-                <br />
                 bunny find its missing carrot."</i> 
                 <br />
                 <br />
                 This tailored prompt ensures that the CLIP score aligns with our desired style, with a higher score indicating 
-                <br />
                 better alignment.
                 <br />
                 <br />
                 <i style="color:aqua">FID</i> is calculated by comparing the distribution of our fine-tuning dataset with the distribution of generated
-                <br />
                 images. A lower FID score indicates better-quality images, as it signifies a closer match between the fine-tuning 
-                <br />
                 dataset distribution and the distribution of generated images. 
                 <br />
                 <br />
@@ -393,14 +377,11 @@
                 <br />
                 <br />
                 In each experiment, our fine-tuned model generated 100 images using the same set of 100 text prompts, 
-                <br />
                 and we preserved the corresponding image-text pairs. 
                 <br />
                 <br />
                 Utilizing these pairs, we computed the CLIP score. Additionally, we evaluated the image distribution by
-                <br />
                 comparing it with the distribution of images in our fine-tuned dataset, which resulted in the calculation 
-                <br />
                 of the FID score. 
                 <br />
                 <br />
@@ -461,12 +442,10 @@
             <div class="sub">
               <div class="project-text">
                 With a <i>consistent inference step</i>, the model's performance, as measured by FID, exhibits a slight improvement 
-                <br />
                 when the <i>training steps</i> are increased from 1,000 to 15,000.
                 <br />
                 <br />
                 With a <i>consistent training step</i>, the model’s performance, as measured by FID, exhibits a slight improvement 
-                <br />
                 when the <i>inference steps</i> are increased from 30 to 60.
                 <br />
                 <br />
@@ -505,12 +484,10 @@
                 <br />
                 <br />
                 We observed that as the number of training steps increases, the generated images tend to include more  
-                <br />
                 details and become more closely related to the prompt. 
                 <br />
                 <br />
                 The model also tends to 'forget' what it has learned during the pre-training stage, while improving its ability 
-                <br />
                 to learn the color patterns and style of the fine-tuning dataset.
                 <br />
                 <br />
